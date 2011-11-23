@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Data-Struct
-version:            1.700
+version:            1.701
 abstract:           Simple struct building
 author:
     - Johan Vromans <jv@cpan.org>

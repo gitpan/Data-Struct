@@ -10,7 +10,7 @@ use Carp;
 
 $Carp::Internal{ (__PACKAGE__) }++;
 
-our $VERSION = "1.700";
+our $VERSION = "1.701";
 
 # use Data::Struct;
 #
@@ -131,22 +131,17 @@ Data::Struct - Simple struct building
 
 =head1 DESCRIPTION
 
-This module implements a very basic and easy to use struct builder.
+A I<struct> is a data structure that can contain values (attributes).
+The values of the attributes can be set at creation time, and read and
+modified at run time. This module implements a very basic and easy to
+use I<struct> builder.
 
-A I<struct> is a data structure that can contain values (attributes). The
-values of the attributes can be set at creation time, and read and
-modified at run time. Attributes can be anything that Perl can handle.
-There's no checking on types. You may want to use L<Class::Struct> if
-you need I<struct>s with type checking and inheritance.
-
-Objects are much more powerful. Besides data, they can contain
-behaviour (methods), support inheritance and encapsulation. This
-module deals with data structures and not Objects, so I took placed it
-under the Data:: hierarchy.
-
-Data::Struct tries to avoid as much association with objects as
-possible. Please see L<Object::Tiny|Object::Tiny> for something
-similar using real objects.
+Attributes can be anything that Perl can handle. There's no checking
+on types. If you need I<struct>s with type checking and inheritance
+and other fancy stuff, use one of the many CPAN modules that implement
+data structures using classes and objects. Data::Struct deals with
+data structures and not objects, so I placed this module under the
+Data:: hierarchy.
 
 To use Data::Struct, just use it. This will export the struct()
 function that does all the work.

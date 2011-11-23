@@ -1,5 +1,8 @@
 Revision history for Data::Struct
 
+1.701	2011-11-23
+	Documentation improvements.
+
 1.700	2011-11-21
 	Rewritten for 'struct' API.
 	Eliminate 'eval'.
